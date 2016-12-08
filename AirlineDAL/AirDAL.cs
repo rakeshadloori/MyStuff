@@ -12,6 +12,7 @@ namespace AirlineDAL
 {
     public static class AirDAL
     {
+        // SQL Connection
         static string connection = ConfigurationManager.ConnectionStrings["AirlineDBConnectionString"].ToString();
         public static DataTable getAirlineDetails()
         {
