@@ -4,12 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineApp", "AirlineApp\AirlineApp.csproj", "{14F06A96-C0F5-4069-BAEA-5C4FD575990C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C091EB78-F313-4148-83CD-261D141215A0} = {C091EB78-F313-4148-83CD-261D141215A0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineBO", "AirlineBO\AirlineBO.csproj", "{10BFACFB-86CF-45EC-BC74-9664CA638371}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineDAL", "AirlineDAL\AirlineDAL.csproj", "{F1A7EC74-F127-498C-8E04-D7DB0910623F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineWebServices", "AirlineWebServices\AirlineWebServices.csproj", "{C091EB78-F313-4148-83CD-261D141215A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceIntro", "WCFServiceIntro\WCFServiceIntro.csproj", "{8A6797A1-4EC5-4B26-AB12-5B787CBE54C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{C091EB78-F313-4148-83CD-261D141215A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C091EB78-F313-4148-83CD-261D141215A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C091EB78-F313-4148-83CD-261D141215A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6797A1-4EC5-4B26-AB12-5B787CBE54C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6797A1-4EC5-4B26-AB12-5B787CBE54C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6797A1-4EC5-4B26-AB12-5B787CBE54C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6797A1-4EC5-4B26-AB12-5B787CBE54C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
