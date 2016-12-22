@@ -13,6 +13,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 <body>
@@ -50,11 +51,11 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        
                         <li><a runat="server" href="~/Details">Details</a></li>
                         <li><a runat="server" href="~/WebServices">WebServices</a></li>
                         <li><a runat="server" href="~/WCF">WCF</a></li>
+                        <li><a runat="server" href="~/WcfwsHttpBinding">wsHttpBinding</a></li>
+                        <li><a runat="server" href="~/Ajax">Ajax</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>

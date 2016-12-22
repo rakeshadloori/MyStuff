@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bebba35d-7819-4137-9500-28c741f712e4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61727/wsHttpBinding.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="wsHttpBinding.disco" MetadataType="Disco" ID="996fcf34-a465-4697-a194-4f201a584cc6" SourceId="1" SourceUrl="http://localhost:61727/wsHttpBinding.svc?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="f0fb1393-0a57-4774-8ca0-74798ba922d8" SourceId="1" SourceUrl="http://localhost:61727/wsHttpBinding.svc?wsdl" />
+    <MetadataFile FileName="wsHttpBinding.xsd" MetadataType="Schema" ID="0c2a85a8-46da-4806-80c0-2922bc7d12d7" SourceId="1" SourceUrl="http://localhost:61727/wsHttpBinding.svc?xsd=xsd2" />
+    <MetadataFile FileName="wsHttpBinding1.xsd" MetadataType="Schema" ID="9055baa9-d284-45d4-af8b-feeb52b4b9c1" SourceId="1" SourceUrl="http://localhost:61727/wsHttpBinding.svc?xsd=xsd3" />
+    <MetadataFile FileName="wsHttpBinding2.xsd" MetadataType="Schema" ID="e24ae41a-21ec-489f-b321-daa822459fd0" SourceId="1" SourceUrl="http://localhost:61727/wsHttpBinding.svc?xsd=xsd0" />
+    <MetadataFile FileName="wsHttpBinding3.xsd" MetadataType="Schema" ID="1c30b91d-7e4e-4457-9475-75223033fd49" SourceId="1" SourceUrl="http://localhost:61727/wsHttpBinding.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

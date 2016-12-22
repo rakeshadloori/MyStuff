@@ -200,6 +200,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Ajax.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -234,6 +235,19 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\ServiceReference1\Service1.wsdl" />
+    <None Include="Service References\ServiceReference1\wsHttpBinding.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\wsHttpBinding1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\wsHttpBinding2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\wsHttpBinding3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\WeatherService\WeatherDataService.disco" />
     <None Include="Service References\WeatherService\configuration91.svcinfo" />
     <None Include="Service References\WeatherService\configuration.svcinfo" />
@@ -241,7 +255,15 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\ServiceReference1\wsHttpBinding.disco" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="WCF.aspx" />
+    <Content Include="WcfwsHttpBinding.aspx" />
     <Content Include="WebServices.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -407,6 +429,13 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ajax.aspx.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax.aspx.designer.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -454,6 +483,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\WeatherService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -488,6 +522,13 @@
     <Compile Include="WCF.aspx.designer.cs">
       <DependentUpon>WCF.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WcfwsHttpBinding.aspx.cs">
+      <DependentUpon>WcfwsHttpBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WcfwsHttpBinding.aspx.designer.cs">
+      <DependentUpon>WcfwsHttpBinding.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebServices.aspx.cs">
       <DependentUpon>WebServices.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -519,6 +560,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\AirlineWS1\" />
     <WCFMetadataStorage Include="Service References\AirlineWS\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
     <WCFMetadataStorage Include="Service References\WeatherService\" />
   </ItemGroup>
   <PropertyGroup>

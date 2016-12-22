@@ -14,6 +14,37 @@ namespace AirlineDAL
     {
         // SQL Connection
         static string connection = ConfigurationManager.ConnectionStrings["AirlineDBConnectionString"].ToString();
+        
+        public static DataTable getClassDetails()
+        {
+            SqlConnection conn = new SqlConnection(connection);
+            conn.Open();
+            DataTable dtAirlines = new DataTable();
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.CommandText = "spGetClass";
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter();
+                dataAdapter.SelectCommand = cmd;
+                DataSet dsAirlines = new DataSet();
+                dataAdapter.Fill(dsAirlines);
+                dtAirlines = dsAirlines.Tables[0];
+                //Comment
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+            }
+            return dtAirlines;
+        }
         public static DataTable getAirlineDetails()
         {
             SqlConnection conn = new SqlConnection(connection);
